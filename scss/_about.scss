@@ -1,0 +1,23 @@
+@import "./mixins";
+@import "./variables";
+
+.about {
+    h2 {
+        font-size: $h2;
+        text-align: center;
+    }
+    section {
+        padding: 4.5rem 0;
+        @include flex(row, space-between, center);
+
+        p {
+            font-size: $paragraph;
+            max-width: 51.5rem;
+        }
+
+        img {
+            max-width: 468px;
+            height: auto;
+        }
+    }
+}

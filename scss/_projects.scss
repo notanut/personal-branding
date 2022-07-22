@@ -1,0 +1,74 @@
+@import "./mixins";
+@import "./variables";
+
+.portfolio {
+    @include flex(column, center, center);
+    gap: 3rem;
+
+    h2 {
+        font-size: $h2;
+    }
+
+    p {
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-size: $paragraph;
+    }
+
+    .project {
+        width: 100%;
+        @include flex(row, space-between, center);
+
+        h3 {
+            font-size: $h3;
+            max-width: 567px;
+        }
+
+        button {
+            @include button(transparent, 1px solid $dark-grey);
+            text-transform: uppercase;
+            padding: .5em 1em;
+            letter-spacing: 0.15em;
+            font-size: $paragraph;
+            transition: .3s all ease-in;
+                color: $dark-grey;
+            
+                &:hover {
+                    background-color: $dark-grey;
+                    color: $white;
+                }
+        }
+    }
+
+    .carousel {
+        .images {
+            padding-top: 5rem;
+                display: flex;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+                gap: 1.75rem;
+
+            img {
+                height: 450px;
+                width: auto;
+            }
+        }
+        .navigation {
+            padding-top: 5rem;
+            @include flex(row, center, center);
+            gap: 1.25rem;
+
+            .button {
+                background-color: $yellow;
+                padding: 1.75rem 1rem;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: .3s all ease-in;
+
+                &:hover {
+                    opacity: .75;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,413 @@
+.home a {
+  text-decoration: none;
+  color: #525252;
+}
+
+.home header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home header .logo {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.home header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+}
+
+.home header nav ul li {
+  font-size: 2rem;
+}
+
+.home header nav ul li a {
+  color: #525252;
+}
+
+.home section {
+  padding: 4.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home section .left .title h1 {
+  font-size: 6.75rem;
+  font-weight: 800;
+}
+
+.home section .left .cta {
+  margin: 2.5rem 0;
+  gap: 2rem;
+  outline: none;
+  border: 1px solid #525252;
+  background: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  -webkit-transition: .3s all ease-in;
+  transition: .3s all ease-in;
+  color: #525252;
+}
+
+.home section .left .cta:hover {
+  background-color: #525252;
+  color: #FFFFFF;
+}
+
+.home section .left .cta:hover a {
+  color: #FFFFFF;
+}
+
+.home section .left .cta span, .home section .left .cta svg {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 2rem;
+}
+
+.about h2 {
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.about section {
+  padding: 4.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about section p {
+  font-size: 2rem;
+  max-width: 51.5rem;
+}
+
+.about section img {
+  max-width: 468px;
+  height: auto;
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.portfolio h2 {
+  font-size: 4.5rem;
+}
+
+.portfolio p {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 2rem;
+}
+
+.portfolio .project {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio .project h3 {
+  font-size: 4rem;
+  max-width: 567px;
+}
+
+.portfolio .project button {
+  outline: none;
+  border: 1px solid #525252;
+  background: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: .5em 1em;
+  letter-spacing: 0.15em;
+  font-size: 2rem;
+  -webkit-transition: .3s all ease-in;
+  transition: .3s all ease-in;
+  color: #525252;
+}
+
+.portfolio .project button:hover {
+  background-color: #525252;
+  color: #FFFFFF;
+}
+
+.portfolio .carousel .images {
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1.75rem;
+}
+
+.portfolio .carousel .images img {
+  height: 450px;
+  width: auto;
+}
+
+.portfolio .carousel .navigation {
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+}
+
+.portfolio .carousel .navigation .button {
+  background-color: #FAEAA0;
+  padding: 1.75rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: .3s all ease-in;
+  transition: .3s all ease-in;
+}
+
+.portfolio .carousel .navigation .button:hover {
+  opacity: .75;
+}
+
+.contacts {
+  width: 100%;
+  background-color: #525252;
+  color: #FFFFFF;
+  height: 350px;
+  padding: 3rem 8rem;
+}
+
+.contacts h4 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.contacts .socials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (675px)[2];
+      grid-template-columns: repeat(2, 675px);
+  row-gap: 3rem;
+}
+
+.contacts .socials .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.contacts .socials .social img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.contacts .socials .social a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #525252;
+  scroll-behavior: smooth;
+}
+
+main {
+  padding: 4rem 8rem 9rem;
+  min-height: calc(100vh - 350px);
+}
+
+h1, h2, h3, h4, .logo {
+  font-family: 'Montserrat', sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,74 @@
+@import "./mixins";
+@import "./variables";
+
+.home {
+    a {
+        text-decoration: none;
+        color: $dark-grey;
+    }
+    
+    header {
+        @include flex(row, space-between, center);
+        .logo {
+            font-weight: 700;
+            font-size: $h4;
+        }
+    
+        nav {
+            ul {
+                @include flex(row, space-around, center);
+                gap: 5rem;
+    
+                li {
+                    font-size: 2rem;
+    
+                    a{
+                        color: $dark-grey;
+                    }
+                }
+            }
+        }
+    }
+    
+    section {
+        padding: 4.5rem 0;
+        @include flex(row, space-between, center);
+    
+        .left {
+            .title {
+                h1 {
+                    font-size: 6.75rem;
+                    font-weight: 800;
+                }
+            }
+            
+            .cta {
+                margin: 2.5rem 0;
+                gap: 2rem;
+                @include button(transparent, 1px solid $dark-grey);
+                @include flex(row, center, center);
+                padding: 1.5rem;
+                transition: .3s all ease-in;
+                color: $dark-grey;
+
+                &:hover {
+                    background-color: $dark-grey;
+                    color: $white;
+
+                    a{
+                        color: $white;
+                    }
+                }
+
+                span, svg {
+                    text-transform: uppercase;
+                    letter-spacing: 0.15em;
+                    font-size: 2rem;
+    
+                }
+            }
+        }
+    }
+}
+
+

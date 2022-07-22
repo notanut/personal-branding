@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles.css">
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Quicksand:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>Natasya's Website</title>
+</head>
+    <body>
+        <main>
+            <div class="home" id="home">
+                <header>
+                <a href="#home" class="logo">N</a>
+                <nav>
+                    <ul role="list">
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+                <div class="left">
+
+                    <div class="title">
+                        <h1>
+                            Hello,
+                            it's me, Tasya!
+                        </h1>
+                    </div>
+                    <button class="cta">
+                        <span><a href="#about">know me better</a></span>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </button>
+                </div>
+                <img src="./assets/images/Saly-41.png" alt="a robot-headed guy says hi">
+            </section>
+        </div>
+
+        <div class="about" id="about">
+            <h2>About Me</h2>
+            <section>
+                <p>
+                    Hello, my name is Natasya Fernanda Josy. But, you can call me Nat, or Tasya. I am a 12-grader student in 48 Vocational
+                    High School Jakarta, also a Graphic Designer and Coder. I have interest(s) in Graphic Design, Motion Graphic, and Web
+                    Development. I always seek for new experiences, new adventures, and many more.
+                </p>
+                <img src="./assets/images/Saly-40.png" alt="a robot-headed guy runs">
+            </section>
+        </div>
+
+        <div class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+            <img src="./assets/images/Saly-38.png" alt="a robot-headed guy plays laptop">
+            <p>
+                let's take a look
+            </p>
+
+            <section class="carousel">
+                <div class="images">
+                    <img src="./assets/images/background-01-01.jpg" alt="background">
+                    <img src="./assets/images/banner 2.png" alt="banner">
+                    <img src="./assets/images/banner 3-01.png" alt="banner">
+                    <img src="./assets/images/banner 4-01.png" alt="banner">
+                    <img src="./assets/images/jaya 2.png" alt="banner">
+                    <img src="./assets/images/UI.png" alt="UI">
+                </div>
+
+                <div class="navigation">
+                    <img src="./assets/images/left.svg" alt="previous" class="button previous">
+                    <img src="./assets/images/right.svg" alt="next" class="button next">
+                </div>
+            </section>
+
+            <article class="project">
+                <h3>Wanna see more
+                of my projects?</h3>
+                <button onclick="window.location.href='https://projects-nat.netlify.app/';">
+                    click here
+                </button>
+            </article>
+        </div>
+        </main>
+
+        <footer id="contacts" class="contacts">
+            <h4>Contacts</h4>
+            <div class="socials">
+                <div class="social 1">
+                    <img src="./assets/logo/mail.svg" alt="gmail"
+                    onclick="window.location.href='mailto:natasyajosy@gmail.com'"
+                    >
+                    
+                    <a href="mailto:natasyajosy@gmail.com">
+                            natasyajosy@gmail.com
+                    </a>
+                </div>
+                <div class="social 2">
+                    <img src="./assets/logo/linkedin.svg" alt="linkedin" onclick="window.location.href='https://www.linkedin.com/in/natasya-f-j-a88a64207/'"
+                    >
+                    <a href="https://www.linkedin.com/in/natasya-f-j-a88a64207/">Natasya F. J</a>
+                </div>
+                <div class="social 3">
+                    <img src="./assets/logo/instagram.svg" alt="instagram" onclick="window.location.href='https://instagram.com/natasyaafj_'"
+                    >
+                    <a href="https://instagram.com/natasyaafj_">@natasyaafj_</a>
+                </div>
+
+                <div class="social 3">
+                    <img src="./assets/logo/github-brands.svg" alt="github">
+                    <a href="https://github.com/notanut">notanut</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
